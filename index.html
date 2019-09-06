@@ -9,6 +9,13 @@
 	font-size: 22px;
 	color: #FF5F00;
 }
+a{
+	text-decoration:none;
+	font-family:"创艺简楷体";
+	color:#FF3F00; 
+	font-size:16px;
+	margin-right:20px;
+}
 .class2 {
 	font-family: "黑体";
 	font-size: 14px;
@@ -24,8 +31,14 @@
 <div class="class1" id="div1">
   <div align="center"><span id="div1">Welcome to di's personal home page</span></div>
 </div>
+<div class="class1_1" id="div1_1">
+<p align="center"> 
+<a href="https://www.baidu.com">主页</a>
+<a href="https://Ldi123.github.io/Together.html">更多</a>
+</p>
+</div>
 <div class="class2" id="div2">
-<table border="1" align="center">
+  <table border="1" align="center">
 <tr>
   <td>
    <p align="center">Personal Profile</p>
@@ -58,6 +71,7 @@
   </td>
 </tr>
 </table>
+</div>
 <div class="class3" id="div3" align="center"><p id="p1"></p></div>
 <script type="text/javascript">
 	var caution=false
@@ -130,7 +144,7 @@
 	var day = myDate.getDate();        //获取当前日(1-31)
 	//获取完整年月日
 	var newDay = year + "年" + month + "月" + day+"日";
-	document.getElementById("p1").innerHTML = "截至"+newDay+","+"本网页第" + visits + "次被访问！"
+	document.getElementById("p1").innerHTML = "截至"+newDay+","+"你访问了此页面" + visits + "次！"
 </script>
 </body>
 </html>
