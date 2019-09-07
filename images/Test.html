@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>BMI</title> 
+</head>
+  <style>
+        div {
+            position: absolute;
+            top: 50%;
+			left:40%;
+            margin: -150px 0 0 -200px;
+            width: 600px;
+            height: 400px;
+            border: 1px solid blue;
+			font-family:"宋体";
+			font-size:24px;
+        }
+    </style>
+<body>
+ <div>
+ 身高：<input id="height" value="1.70" align="middle"></input></br>
+体重：<input id="weight" value="51" align="middle"></input></br>
+<script>
+function fun(){
+	var height,weight,result,cc;
+	height=document.getElementById("height").value
+	weight=document.getElementById("weight").value
+	result=Math.ceil( weight/(height*height))
+	cc=(result>=18)&&(result<=23)?"正常":result<18?"偏瘦，多吃点吧":"偏胖，该减肥了"
+		document.getElementById("def").innerHTML=result
+	document.getElementById("abc").innerHTML=cc
+}
+</script>
+</br><button onclick="fun()">提交</button></br></br>
+状态指数：<p id="def"></p>
+状态报告：<p id="abc"></p></br>
+ </div>
+</body>
+</html>
