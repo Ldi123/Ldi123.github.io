@@ -10,10 +10,12 @@
 	color:#FF5F00;
 }
 a{
-	font-family:"创艺简楷体";
-	color:#00F; 
-	font-size:16px;
-	margin-right:20px;
+	font-family: "创艺简楷体";
+	color: #00F;
+	font-size: 24px;
+	margin-right: 20px;
+	text-align: left;
+	font-weight: bold;
 }
 .class2 {
 	font-family: "黑体";
@@ -24,53 +26,41 @@ a{
 	font-size: 16px;
 	color: #2A9FFF;
 }
+body {
+	background-image: url(images/a1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 </style>
 </head>
 <body>
-<div class="class1" id="div1">
-  <div align="center"><span id="div1">Welcome to di's personal home page</span></div>
-</div>
-<div>
-<p align="center"> 
-<a href="https://ldi123.github.io/html/home.html">主页</a>
-<a href="https://ldi123.github.io/html/Together.html">更多</a>
-</p>
-</div>
-<div class="class2" id="div2">
-  <table border="1" align="center">
+<div class="class2" id="div2"></div>
+  <table width="590" height="334" border="0" align="center">
 <tr>
   <td>
-   <p align="center">Personal Profile</p>
+  <div class="class1" id="div1">
+  <div align="center">
+  <span id="div1">Welcome to di's personal home page</span>
+  </div></div>
   </td>
   <td>
-   <table border="1">
-   <tr>
-     <td>Name</td>
-     <td>Lv Di</td>
-   </tr>
-   <tr>
-      <td>Hometown</td>
-      <td>Yunnan</td>
-   </tr>
-   </table>
   </td>
 </tr>
 <tr>
-  <td>Hobbys
+  <td>Tips
    <ul>
-    <li>Play table tennis</li>
-    <li>Play chess</li>
-    <li>Reading</li>
-    <li>Running</li>
-    <li>Comic</li>
-    <li>Clip Video</li>
+    <li>welcome……</li>
+    <li>Continuously updating</li>
+    <li>Let's begin……</li>
    </ul>
   </td>
-  <td align="center">Coming soon...  
+  <td align="center" valign="bottom">
+   <a href="https://ldi123.github.io/html/home.html">进入</a>  
   </td>
 </tr>
 </table>
-</div>
 <div class="class3" id="div3" align="center"><p id="p1"></p></div>
 <script type="text/javascript">
 	var caution=false
@@ -143,7 +133,7 @@ a{
 	var day = myDate.getDate();        //获取当前日(1-31)
 	//获取完整年月日
 	var newDay = year + "年" + month + "月" + day+"日";
-	document.getElementById("p1").innerHTML = "截至"+newDay+","+"你访问了此页面" + visits + "次！"
+	document.getElementById("p1").innerHTML = "截至"+newDay+","+"你访问了此网页" + visits + "次！"
 </script>
 </body>
 </html>
